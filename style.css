@@ -1,3 +1,37 @@
 body {
-    background-color: aquamarine;
+    
+    color: white;
+    margin: 0;
+}
+
+#video-bg {
+    position: fixed;
+}
+
+/* Box Styling */
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.box-1 {
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.box-2 {
+    background-color: black;
+    text-align: center;
+}
+
+/* Image Styling */
+.site-logo {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
 }
