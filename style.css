@@ -11,8 +11,8 @@ body {
 /* Main container GRID formatting */
 .page-wrapper {
     display: grid;
-    grid-template-columns: 165px 100%;
-    grid-template-rows: 350px 100%;
+    grid-template-columns: 165px 1fr;
+    grid-template-rows: 350px 1fr;
 }
 
 .nav-bar {
@@ -31,10 +31,12 @@ body {
 
 /* Navigation Styling */
 .nav-items {
+    width: 165px;
     background-color: transparent;
     transition: 2s ease-in-out;
     height: 100%;
     box-shadow: 2px 1px 6px -2px;
+    position: fixed;
 }
 
 .nav-items:hover {
@@ -101,4 +103,35 @@ body {
 
 .box-2 {
     text-align: center;
+}
+
+/* Main Styling */
+.main {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.house-logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.house-logo {
+    height: 200px;
+    width: auto;
+}
+
+.house-box {
+    background-color: blueviolet;
+}
+
+.minimal-logo {
+    height: 350px;
+    width: auto;
 }
