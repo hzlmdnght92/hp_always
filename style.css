@@ -8,11 +8,38 @@ body {
     z-index: -10;
 }
 
+#splash-img {
+    position: fixed;
+    z-index: 5;
+    left: 33%;
+}
+
+#splash-img img {
+    height: 100vh;
+}
+
+#splash-img img:hover {
+    cursor: pointer;
+}
+
+#splash-text {
+    font-family: fantasy;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    z-index: 10;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    display: none;
+}
+
 /* Main container GRID formatting */
 #page-wrapper {
     display: grid;
     grid-template-columns: 165px 1fr;
     grid-template-rows: 350px 1fr;
+    filter: blur(8px);
 }
 
 #nav-bar {
@@ -66,6 +93,8 @@ body {
     font-size: 20px;
     text-align: center;
 }
+
+
 
 /* Image Styling */
 .site-logo {
