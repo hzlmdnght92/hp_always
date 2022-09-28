@@ -94,7 +94,14 @@ body {
     text-align: center;
 }
 
+.item {
+    transition: .5s ease-in-out;
+}
 
+.item:hover {
+    color: purple;
+    cursor: pointer;
+}
 
 /* Image Styling */
 .site-logo {
@@ -154,6 +161,12 @@ body {
 .house-logo {
     height: 200px;
     width: auto;
+    filter: grayscale(50);
+    transition: .5s ease-in-out;
+}
+
+.house-logo:hover {
+    filter: grayscale(0);
 }
 
 .house-box {

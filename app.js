@@ -1,8 +1,15 @@
 const splashText = document.querySelector('#splash-text')
-console.log(splashText)
 const splashImage = document.querySelector('#splash-img')
-console.log(splashImage)
+const pageWrapper = document.querySelector('#page-wrapper')
+
+let imgClick = 0
 
 splashImage.addEventListener('click', () => {
-    console.log('Hello World')
+    imgClick += 1
+    splashText.style.display = "block"
+    if (imgClick > 1) {
+        splashText.style.display = "none"
+        splashImage.style.display = "none"
+        pageWrapper.style.filter = "blur(0px)"
+    }
 })
